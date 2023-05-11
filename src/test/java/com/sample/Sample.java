@@ -13,11 +13,12 @@ public class Sample extends BaseClass{
 		elementSendkeys(element, "dinesh1596");
 		WebElement element1 = findLocatorById("password");
 		elementSendkeys(element1, "dinesh1596");
+	}
+		@Test
+		public void login() {
 		WebElement element3 = findLocatorById("login");
 		elementClick(element3);
-		
-		
-		
+			
 	}
 
 }
