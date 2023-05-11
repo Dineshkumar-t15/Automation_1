@@ -13,12 +13,20 @@ public class Sample extends BaseClass{
 		elementSendkeys(element, "dinesh1596");
 		WebElement element1 = findLocatorById("password");
 		elementSendkeys(element1, "dinesh1596");
-	}
-		@Test
-		public void login() {
 		WebElement element3 = findLocatorById("login");
 		elementClick(element3);
-			
+	}
+	@Test
+	public void test1() {
+		getDriver("chrome");
+		enterURL("https://adactinhotelapp.com/");
+	    maximizewindow();
+		WebElement element = findLocatorById("username");
+		elementSendkeys(element, "dinesh1596");
+		WebElement element1 = findLocatorById("password");
+		elementSendkeys(element1, "dinesh159");
+		WebElement element3 = findLocatorById("login");
+		elementClick(element3);
 	}
 
 }
